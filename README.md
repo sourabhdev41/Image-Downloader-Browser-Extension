@@ -25,7 +25,6 @@ Click the extension icon on any page. The popup scans the page for images from:
 ## Screenshots
 
 <img width="2934" height="1594" alt="image" src="https://github.com/user-attachments/assets/e18d1607-ef22-4b55-aedd-adbe63f5d64c" />
-<img width="804" height="618" alt="image" src="https://github.com/user-attachments/assets/2ec864df-6410-40b2-ad0a-39748f51b8da" />
 
 
 ## Installation

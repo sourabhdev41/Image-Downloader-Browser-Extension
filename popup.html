@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Downloader</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-top">
+      <h1>Image Downloader</h1>
+      <span id="count" class="count"></span>
+    </div>
+    <div class="controls">
+      <input type="text" id="search" placeholder="Filter by filename or URL..." />
+      <div class="filter-row">
+        <label>
+          Min size:
+          <select id="minSize">
+            <option value="0">Any</option>
+            <option value="50">50px+</option>
+            <option value="100">100px+</option>
+            <option value="200">200px+</option>
+            <option value="500">500px+</option>
+          </select>
+        </label>
+        <button id="downloadAll" class="btn-primary" disabled>Download All</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="status" class="status hidden"></div>
+
+  <div id="loading" class="loading">
+    <div class="spinner"></div>
+    <p>Scanning page for images...</p>
+  </div>
+
+  <div id="images" class="images-grid"></div>
+
+  <div id="empty" class="empty hidden">
+    <p>No images found on this page.</p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
